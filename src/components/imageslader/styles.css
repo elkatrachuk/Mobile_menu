@@ -1,0 +1,23 @@
+.image-list-item img {
+  width: 150px;
+}
+
+.image-list {
+  display: flex;
+  overflow-x: scroll;
+}
+.image-list-item {
+  padding: 0.5rem;
+}
+.image-list-item a {
+  padding: 0 !important;
+}
+
+.image-list {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.image-list::-webkit-scrollbar {
+  display: none;
+}

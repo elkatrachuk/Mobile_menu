@@ -1,0 +1,127 @@
+.navigation {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.5rem 0rem;
+  background-color: #fff;
+  color: black;
+  border-bottom: 1px solid #e5e5e5;
+}
+.brand-name {
+  text-decoration: none;
+  color: black;
+  margin-top: 2px;
+  font-size: 1.3rem;
+}
+.navigation-menu ul {
+  display: flex;
+  padding: 0;
+}
+.navigation-menu li {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+.navigation-menu li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .desktop-navigation {
+    display: none;
+  }
+
+  .hamburger {
+    height: 4.8vw;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 4vw;
+    border: 0;
+    background: none;
+  }
+  .background-hamburger {
+    height: 2px;
+    width: 6vw;
+    background: #000;
+  }
+  .navigation-menu ul {
+    display: none;
+  }
+  .navigation-menu ul {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 77px);
+    background-color: white;
+  }
+  .navigation-menu li {
+    text-align: center;
+    margin: 0;
+    border-bottom: 1px solid #d8d5db;
+  }
+  .navigation-menu li a {
+    color: black;
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+  .navigation-menu.expanded ul {
+    display: block;
+  }
+}
+.right-buttons {
+  margin-left: auto;
+  margin-right: 10px;
+}
+.search {
+  background: url("../../images/search.png");
+  height: 32px;
+  width: 32px;
+  border: 0;
+}
+
+.basket {
+  background: url("../../images/basket.png");
+  height: 32px;
+  width: 32px;
+  border: 0;
+}
+
+.close {
+  background: url("../../images/close.png");
+  height: 40px;
+  width: 40px;
+  border: 0;
+}
+.close .background-hamburger {
+  display: none;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.name {
+  font-size: 15px;
+  color: #3e4e50;
+  display: flex;
+}
+.count {
+  font-size: 15px;
+  color: #3e4e5069;
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .mobile-navigation {
+    display: none;
+  }
+}
